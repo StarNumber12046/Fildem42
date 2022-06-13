@@ -2,12 +2,10 @@ const GObject = imports.gi.GObject;
 const Gio = imports.gi.Gio;
 const Gtk = imports.gi.Gtk;
 const Config = imports.misc.config;
-
 const Me = imports.misc.extensionUtils.getCurrentExtension();
 const Settings = Me.imports.settings.FildemGlobalMenuSettings;
 
 const SHELL_VERSION = Config.PACKAGE_VERSION;
-
 
 const PrefsWidget = GObject.registerClass(
 class PrefsWidget extends Gtk.Box {	
